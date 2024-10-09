@@ -1,0 +1,42 @@
+﻿@model BinaryString.Models.BinaryValidator
+
+@{
+    ViewBag.Title = "Homepage";
+}
+
+@using (Html.BeginForm("CheckBinaryString", "Binary", FormMethod.Post, new { id = "binaryForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container col-6 mt-5">
+        <div class="card shadow-lg">
+            <div class="card-header bg-dark text-white text-center">
+                <h3>Check Binary String</h3>
+            </div>
+            <div class="card-body">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group row mt-3">
+                    @Html.LabelFor(model => model.BinaryString, "Binary String", htmlAttributes: new { @class = "col-sm-3 col-form-label" })
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.BinaryString, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter binary string" } })
+                        @Html.ValidationMessageFor(model => model.BinaryString, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row mt-4">
+                    <div class="col-sm-12 text-center">
+                        <input type="submit" value="Check" class="btn btn-dark btn-lg px-5" />
+                    </div>
+                </div>
+
+                <div class="form-group row mt-5">
+                    @Html.Label("Result", htmlAttributes: new { @class = "col-sm-3 col-form-label" })
+                    <div class="col-sm-7">
+                        <div id="result" class="alert alert-info form-control-static text-center" role="alert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
