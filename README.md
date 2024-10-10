@@ -1,8 +1,8 @@
-# Binary String Validator
+# Binary String
 
 ## Overview
 
-The Binary String Validator is an ASP.NET MVC web application that allows users to input a binary string and determine if the string is "good" based on two key conditions:
+The Binary String is an ASP.NET MVC web application that allows users to input a binary string and determine if the string is "good" based on two key conditions:
 1. The binary string must contain an equal number of `0`s and `1`s.
 2. For every prefix of the binary string, the number of `1`s should not be less than the number of `0`s.
 
@@ -59,13 +59,13 @@ Here are some example binary strings you can test:
 
  Binary String  Result                                                                 |
 
- 1100         Good - Equal `0`s and `1`s, and no prefix has more `0`s than `1`s. 
- 1001         Not Good - The prefix "100" has more `0`s than `1`s.               
- 111000       Not Good - After "111", the number of `0`s exceeds `1`s.           
- 101          Not Good - Unequal number of `0`s and `1`s.                        
- 110          Not Good - Unequal number of `0`s and `1`s.                        
- 111222       Error - Invalid characters detected (must contain only `0` and `1`).
- (empty)      Error - Input string cannot be null or empty.                      
+ `1100`         Good - Equal `0`s and `1`s, and no prefix has more `0`s than `1`s. 
+ `1001`         Not Good - The prefix "100" has more `0`s than `1`s.               
+ `111000`       Not Good - After "111", the number of `0`s exceeds `1`s.           
+ `101`          Not Good - Unequal number of `0`s and `1`s.                        
+ `110`          Not Good - Unequal number of `0`s and `1`s.                        
+ `111222`       Error - Invalid characters detected (must contain only `0` and `1`).
+ `(empty)`      Error - Input string cannot be null or empty.                      
 
 
 ## Features
