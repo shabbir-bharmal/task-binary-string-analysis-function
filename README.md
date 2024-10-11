@@ -55,17 +55,22 @@ The result will be shown below the input field along with any relevant error mes
 
 ## Example Inputs
 
-Here are some example binary strings you can test:
-
- Binary String  Result                                                                 |
-
- `1100`         Good - Equal `0`s and `1`s, and no prefix has more `0`s than `1`s. 
- `1001`         Not Good - The prefix "100" has more `0`s than `1`s.               
- `111000`       Not Good - After "111", the number of `0`s exceeds `1`s.           
- `101`          Not Good - Unequal number of `0`s and `1`s.                        
- `110`          Not Good - Unequal number of `0`s and `1`s.                        
- `111222`       Error - Invalid characters detected (must contain only `0` and `1`).
- `(empty)`      Error - Input string cannot be null or empty.                      
+ Input String   Expected Output   Message                     
+ "101010"       Valid             Valid binary string.         
+ "1100"         Valid             Valid binary string.         
+ "000111"       Invalid           Invalid binary string.       
+ "01"           Invalid           Invalid binary string.       
+ "000"          Invalid           Invalid binary string.       
+ "111"          Invalid           Invalid binary string.       
+ "101"          Invalid           Invalid binary string.       
+ "1110"         Invalid           Invalid binary string.       
+ "0000"         Invalid           Invalid binary string.       
+ "010101"       Invalid           Invalid binary string.       
+ "100110"       Invalid           Invalid binary string.       
+ "110110"       Invalid           Invalid binary string.       
+ "101100"       Valid             Valid binary string.         
+ "100001"       Invalid           Invalid binary string.       
+ "11110000"     Valid             Valid binary string. 
 
 
 ## Features
@@ -92,11 +97,22 @@ To manually test the application:
 ### Example Test Cases
 
 Test Case Output:
-"1100": Valid, as there are equal numbers of 0s and 1s, and at no prefix do 0s exceed 1s.
-"1001": Invalid, because the prefix "100" has more 0s than 1s.
-"101": Invalid, because the numbers of 0s and 1s are not equal.
-"110": Invalid, because the numbers of 0s and 1s are not equal.
-"111000": Invalid, because at the prefix "111000", the number of 0s exceeds the number of 1s after the first three characters.
+ Input String   Expected Output  Notes                                                   
+ "101010"       Valid            Equal number of 0's and 1's (3 each), valid prefix condition.  
+ "1100"         Valid            Equal number of 0's and 1's (2 each), valid prefix condition.  
+ "000111"       Invalid          Equal number of 0's and 1's (3 each), fails prefix condition. 
+ "01"           Invalid          Equal number of 0's and 1's (1 each), fails prefix condition. 
+ "000"          Invalid          No 1's present, fails both conditions.                  
+ "111"          Invalid          No 0's present, fails the equal count condition.        
+ "101"          Invalid          More 1's than 0's (2 ones and 1 zero), fails equal count condition. 
+ "1110"         Invalid          More 1's than 0's (3 ones and 1 zero), fails equal count condition. 
+ "0000"         Invalid          No 1's present, fails both conditions.                  
+ "010101"       Invalid          Equal number of 0's and 1's (3 each), fails prefix condition. 
+ "100110"       Invalid          Equal number of 0's and 1's (3 each), fails prefix condition. 
+ "110110"       Invalid          More 1's than 0's (4 ones and 2 zeros), fails equal count condition. 
+ "101100"       Valid            Equal number of 0's and 1's (3 each), valid prefix condition. 
+ "100001"       Invalid          More 0's than 1's (5 zeros and 1 one), fails both conditions. 
+ "11110000"     Valid            Equal number of 0's and 1's (4 each), valid prefix condition.  
 
 ## Code Structure
 
