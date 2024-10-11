@@ -83,6 +83,7 @@ C:\Users\Developer\source\repos\BinaryString\BinaryString\obj\Debug\BinaryString
 C:\Users\Developer\source\repos\BinaryString\BinaryString\obj\Debug\BinaryString.dll
 C:\Users\Developer\source\repos\BinaryString\BinaryString\obj\Debug\BinaryString.pdb
 C:\Users\Developer\source\repos\BinaryString\BinaryString\obj\Debug\BinarySt.0A7E1E3E.Up2Date
+C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.csproj.CoreCompileInputs.cache
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\bin\BinaryString.dll.config
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\bin\BinaryString.dll
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\bin\BinaryString.pdb
@@ -164,7 +165,6 @@ C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryStrin
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\bin\System.Web.Http.WebHost.xml
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.csproj.AssemblyReference.cache
-C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.csproj.CoreCompileInputs.cache
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.csproj.CopyComplete
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.dll
 C:\Users\Developer\source\repos\task-binary-string-analysis-function\BinaryString\obj\Debug\BinaryString.pdb

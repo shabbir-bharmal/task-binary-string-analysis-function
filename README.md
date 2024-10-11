@@ -72,7 +72,7 @@ The result will be shown below the input field along with any relevant error mes
 | `101100`     | Valid           | Valid binary string.          |
 | `100001`     | Invalid         | Invalid binary string.        |
 | `11110000`   | Valid           | Valid binary string.          |
-
+| ` `          | InValid         | Binary string can't be empty! |
 ## Features
 
 - **Binary String Validation:** Validates that the input binary string meets the criteria described.
@@ -112,7 +112,6 @@ To manually test the application:
 | `101100`     | Valid           | Equal number of 0's and 1's (3 each), valid prefix condition.       |
 | `100001`     | Invalid         | More 0's than 1's (5 zeros and 1 one), fails both conditions.       |
 | `11110000`   | Valid           | Equal number of 0's and 1's (4 each), valid prefix condition.       |
-| ``           | InValid         | Binary string can't be empty!                                       |
 
 ## Code Structure
 
