@@ -119,7 +119,7 @@ To manually test the application:
 
 - **BinaryStringModel.cs:**
    - Contains the `BinaryString` property for input.
-   - Implements the method `CheckIfGood()` to evaluate whether the string is "good" based on the validation criteria.
+   - Implements the method `CheckIfValidString()` to evaluate whether the string is "good" based on the validation criteria.
 
 ### Views
 
